@@ -1,0 +1,84 @@
+*{
+    padding:0px;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(109.2deg, rgb(249, 174, 240) 6.5%, rgb(139, 144, 250) 97.1%);
+}
+.contact-container{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    align-items: start;
+    /* margin-right:20px; */
+}
+.contact-left-title h2{
+    font-weight:600;
+    font-size: 60px;
+    color:blueviolet;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border:none;
+    height:5px;
+    width:120px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-input::placeholder{
+    font-size:medium;
+}
+.contact-input{
+    width:400px;
+    height:70px;
+    border:none;
+    outline:none;
+    padding-left: 25px;
+    font-weight:400;
+    color:#666;
+    border-radius: 50px;
+    font-size:18px;
+}
+.contact-left textarea{
+    height:140px;
+    padding-top:15px;
+    border-radius:20px;
+}
+.contact-input:focus{
+    border:2px solid blueviolet;
+}
+.contact-left button{
+    display:flex;
+    align-items:center;
+    padding:15px 30px;
+    font-size:16px;
+    color:#fff;
+    border:none;
+    border-radius: 50px;
+    cursor:pointer;
+    gap:10px;
+    background: linear-gradient(270deg,#d67ef0,#ae6bd2);
+}
+.contact-left button img{
+    height:16px;
+}
+.contact-right img{
+    width:800px;
+}
+@media (max-width:800px){
+    .contact-input{
+        width:80vw;
+    }
+    .contact-right{
+        display:none;
+    }
+}
